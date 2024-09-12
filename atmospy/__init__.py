@@ -1,21 +1,16 @@
 from importlib.metadata import version
 
-# import warnings
-# import pandas as pd
-# import numpy as np
-# import math
-# import os
+import matplotlib as mpl
 
-from .utils import *
 from .rcmod import *
 from .relational import *
-from .trends import *
 from .rose import *
 from .stats import *
+from .trends import *
+from .utils import *
 
 # Capture the original matplotlib rcParams
-import matplotlib as mpl
 _orig_rc_params = mpl.rcParams.copy()
 
 # Determine the atmospy version
-__version__ = version('atmospy')
+__version__ = version("atmospy")

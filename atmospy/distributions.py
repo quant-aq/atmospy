@@ -1,18 +1,7 @@
-from .utils import (
-    remove_na,
-)
-from seaborn import (
-    FacetGrid,
-)
-
-__all__ = ["psdplot", ]
+__all__ = []
 
 
-def psdplot(
-    data=None, *,
-    x=None, y=None, row=None, col=None,
-    **kwargs
-):
+def psdplot(data=None, *, x=None, y=None, row=None, col=None, **kwargs):
     """Plot a particle size distribution.
 
     Parameters
